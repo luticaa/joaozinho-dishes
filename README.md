@@ -16,5 +16,10 @@ para 0.64 aproximadamente.
 O bubble levou 18 minutos para concluir a ordenação.
 No pdf dizia de fazer o desempate caso a prioridade fosse igual mas a prioridade é
 unica e nunca será igual entao deixei desta forma.
+As escolhas sobre os pivos em QuickSort São de extrema importancia no desempenho 
+do algoritmo pois muda a complexidade das iterações com a mediana central se comporta
+nlogn e com a seleção aleatoria também. Enquanto nas extremidades configura n² pois
+seria o pior caso nas extremidades e com ele já ordenado(ascendente ou decrescente);
+
 Att,
 Lucas Silva.
