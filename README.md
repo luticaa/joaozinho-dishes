@@ -2,10 +2,7 @@
 A static test struct for use with sorting algorithms (bubbleSort and QuickSort), measures  time difference between these 2 options.
 #README BUBBLE AND QUICK - JOAOZINHO#
 **O projeto foi reaalizado através de uma classe e seu membro de dados privado,
-nao era necessário mas por aplicação é bom pra acostumar. Penso que como o algoritmo
-já é padrão e como a natureza do bubble é fazer exatamente a troca caso seja menor
-até o final da lista, nao deveria haver mudança de desempenho significativo entre
-as implementações, mas claro tudo depende do que foi feito no código.
+nao era necessário mas por aplicação é bom pra acostumar. 
 Nos criamos funções membro separadas para cada ação(criar prioridade, criar nome,
 criar tempo de preparo) e também foi necessário ao final de (QuickSort) inserir 
 mais uma varredura para escrever no membro da classe pois o algoritmo precisava de
