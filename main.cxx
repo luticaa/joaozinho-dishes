@@ -30,7 +30,7 @@ int main(){//funçaõ main
     } else {
         auto pressStart = chrono::high_resolution_clock::now();  // Início da medição;
         vector<Prato>copia = dados.getConteiner();//copia para criação ponteiro
-        vector<Prato> *ptr = &copia;//cria ponteiro para quick
+        vector<Prato> *ptr = new vector<Prato>(copia);//cria ponteiro para quick memoria alocada no heap
         dados.quickSort(ptr,sizeA);//chama algoritmo ordenação
         auto pressEnd = chrono::high_resolution_clock::now();  // Fim da medição
         chrono::duration<double,::milli> tempo = pressEnd - pressStart;//contabiliza o tempo
@@ -38,6 +38,13 @@ int main(){//funçaõ main
         cout<<"O tempo demandado pelo QUICKSORT  foi "<<tempo.count()<<" milisegundos"<<endl;
         //mensagem para usuario
         dados.printData();//mostra dados
+        auto pressStart2 = chrono::high_resolution_clock::now();  // Início da medição;
+        dados.quickSort(ptr,sizeA);
+        auto pressEnd2 = chrono::high_resolution_clock::now(); 
+        chrono::duration<double,::milli> tempo2 = pressEnd2 - pressStart2;//contabiliza o tempo // Fim da medição
+        cout<<"O tempo demandado pelo QUICKSORT JA ORDENADO foi "<<tempo2.count()<<" milisegundos"<<endl;
+        delete ptr;
+        ptr = nullptr;
     } 
 
 }
