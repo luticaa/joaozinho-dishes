@@ -17,6 +17,11 @@ As escolhas sobre os pivos em QuickSort São de extrema importancia no desempenh
 do algoritmo pois muda a complexidade das iterações com a mediana central se comporta
 nlogn e com a seleção aleatoria também. Enquanto nas extremidades configura n² pois
 seria o pior caso nas extremidades e com ele já ordenado(ascendente ou decrescente);
+Após correções no programa (ponteiro mal alocado causando memory leak na main e subs
+crito incorreto no bubble) obtivemos:
+bubble (media 11 a 14 minutos);
+quick embaralhado (368 milisegundos);
+quick ordenado (108 milisegundos);
 
 Att,
 Lucas Silva.
