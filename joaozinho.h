@@ -155,7 +155,7 @@ void OrdenacaoJoaozinho::bubbleSort(){
     //função bubbleSort estudada em sala de aula
     int temp;
     for(int a = 0; a < sizeA-1;a++){
-        for(int b = 1; b < sizeA-1;b++){
+        for(int b = 1; b < sizeA-a;b++){
             if(conteiner[b].priority > conteiner[b-1].priority){
                 temp = conteiner[b-1].priority;
                 conteiner[b-1].priority = conteiner[b].priority;
